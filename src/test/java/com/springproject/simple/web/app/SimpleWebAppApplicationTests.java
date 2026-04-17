@@ -18,10 +18,6 @@ class SimpleWebAppApplicationTests {
     private MockMvc mockMvc;
 
     @Test
-    void contextLoads() {
-    }
-
-    @Test
     void homeEndpointReturnsApplicationStatus() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
