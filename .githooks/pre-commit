@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+echo "Running local quality gate..."
+./mvnw -q checkstyle:check test
